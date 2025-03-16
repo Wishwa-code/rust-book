@@ -7,6 +7,27 @@
  * ? This is useful when we need to change the type of the variable without defining a new variable.
  */
 
+ /**
+* *Variables and mutability
+* ? by dfault all the variables in rust are immutable and if you want to make a variable 
+* ? mutable you need to add mut keyword infront of let keyword this is mostly likely to be used in most scenerios
+*fn main() {
+*   let mut x = 5;
+*    println!("The value of x is: {x}");
+*    x= 6;
+*   println!("The value of x is: {x}");
+*}
+*/
+
+/**
+* * Constants
+* ? constans value are constand no matter what happens and capital letters and underscores need to
+* ? be used to name constant variables and the value should not depend on a value that is generated in 
+* ? in runtime. Can be used to define harcoded values mostly
+* ? also, you need tto explictly define the type of the variable when using const
+* const THREE_HOURS_IN_SECONDS: u32 = 60*60*3;
+*/
+
 fn main() {
 let x = 5;
 
@@ -22,23 +43,3 @@ println!("The value of x is: {x}");
 
 
 
-/**
-* *Variables and mutability
-* ? by dfault all the variables in rust are immutable and if you want to make a variable 
-* ? mutable you need to add mut keyword infront of let keyword this is mostly likely to be used in most scenerios
-fn main() {
-    let mut x = 5;
-    println!("The value of x is: {x}");
-    x= 6;
-   println!("The value of x is: {x}");
-}
-*/
-
-/**
-* * Constants
-* ? constans value are constand no matter what happens and capital letters and underscores need to
-* ? be used to name constant variables and the value should not depend on a value that is generated in 
-* ? in runtime. Can be used to define harcoded values mostly
-* ? also, you need tto explictly define the type of the variable when using const
-const THREE_HOURS_IN_SECONDS: u32 = 60*60*3;
-*/
